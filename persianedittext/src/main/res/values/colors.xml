@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="outerspace">#444444</color>
+    <color name="black">#000000</color>
+    <color name="midnightgreen">#0f5257</color>
+    <color name="white">#ffffff</color>
+    <color name="manatee">#95989a</color>
+    <color name="dimgray">#707070</color>
+    <color name="applegreen">#a5be00</color>
+    <color name="carrotorange">#ed9121</color>
+    <color name="verdigris">#47b7c3</color>
+    <color name="verdigris_1">#3ba4ab</color>
+    <color name="whitesmoke">#f4f8fa</color>
+    <color name="munsell">#edf1f2</color>
+    <color name="platinum">#ceebed</color>
+    <color name="bronze">#db832a</color>
+    <color name="darktangerine">#f6b018</color>
+    <color name="falured">#871d1d</color>
+    <color name="carminepink">#e94f37</color>
+    <color name="darkpastelred">#bc392f</color>
+    <color name="oxfordblue">#0e1437</color>
+    <color name="olive">#889600</color>
+    <color name="applegreen_1">#98a800</color>
+    <color name="onyx">#0f0e15</color>
+    <color name="lightcoral">#f48d8e</color>
+    <color name="lightcoral_1">#f08584</color>
+    <color name="richmaroon">#9c2c6e</color>
+    <color name="black_1">#020202</color>
+    <color name="denim">#1c79c6</color>
+    <color name="munsell_1">#eceff0</color>
+    <color name="verdigris_2">#4db6ac</color>
+    <color name="charcoal">#37474f</color>
+    <color name="cadet">#5b696f</color>
+    <color name="lightslategray">#808a90</color>
+    <color name="lightslategray_1">#7f8b8f</color>
+    <color name="darkslateblue">#2e5077</color>
+    <color name="oldgold">#c6c32e</color>
+    <color name="pansypurple">#6d154d</color>
+    <color name="mediumredviolet">#b53d7e</color>
+    <color name="sandytaupe">#827b21</color>
+    <color name="brass">#aca635</color>
+    <color name="vermilion">#e13f37</color>
+    <color name="smalt">#003399</color>
+    <color name="white_1">#fafffe</color>
+    <color name="taupegray">#8e8e8e</color>
+    <color name="deepcarminepink">#ff3131</color>
+    <color name="whitesmoke_1">#f4f4f4</color>
+    <color name="snow">#fafafa</color>
+    <color name="snow_1">#fcfcfc</color>
+    <color name="moonstoneblue">#70c1b3</color>
+    <color name="coralred">#ff4141</color>
+    <color name="forestgreen">#26a113</color>
+    <color name="trolleygrey">#787878</color>
+    <color name="trolleygrey2">#9e9e9e</color>
+    <color name="gainsboro">#d9d9d9</color>
+    <color name="munsell_2">#eaeaea</color>
+    <color name="lightslategray_2">#7f8b8e</color>
+    <color name="feldgrau">#455a64</color>
+    <color name="platinum_1">#dce5ec</color>
+    <color name="pastelblue">#b7cbd6</color>
+    <color name="uclablue">#477896</color>
+    <color name="gainsboro_1">#cddae2</color>
+    <color name="prussianblue">#0a2d49</color>
+    <color name="pastelblue_1">#b7cbd5</color>
+    <color name="cadetgrey">#85a6b9</color>
+    <color name="pastelblue_2">#b8ccd7</color>
+    <color name="cadetgrey_1">#85a6bb</color>
+    <color name="darkjunglegreen">#231f20</color>
+    <color name="darkslateblue_1">#2d4f76</color>
+    <color name="moonstoneblue_1">#71c1b3</color>
+    <color name="midnightgreen_1">#094045</color>
+    <color name="manatee_1">#949494</color>
+    <color name="taupegray_1">#8f8f8f</color>
+    <color name="platinum_2">#dde8ed</color>
+    <color name="manatee_2">#999999</color>
+    <color name="lightPrimaryColor">#f3f3f3</color>
+    <color name="darkPrimaryColor">#8d8d8d</color>
+    <color name="background">#eeeeee</color>
+    <color name="textColorModelTitle">#5c6d75</color>
+    <color name="textColorModelLink">#2595df</color>
+    <color name="textColorModelPrice">#2f9327</color>
+    <color name="textColorModelDescription">#404040</color>
+    <color name="Golden">#FFA000</color>
+    <item name="blue" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red" type="color">#FFFF4444</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+    <integer-array name="androidcolors">
+        <item>@color/blue</item>
+        <item>@color/purple</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+        <item>@color/darkred</item>
+    </integer-array>
+    <color name="blue_background">#1976D2</color>
+    <color name="teal_background">#00796B</color>
+    <color name="orange_background">#F57C00</color>
+    <color name="red_background">#D32F2F</color>
+    <color name="purple_background">#7B1FA2</color>
+    <color name="transparent_button_pressed">#44444444</color>
+    <color name="transparent_button_focused">#44666666</color>
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorSecondaryText">#000000</color>
+    <color name="midnightgreen_2">#105257</color>
+    <color name="prussianblue_1">#082d49</color>
+
+    <!-- 1st Gradient color -->
+    <color name="colorPurple_A400">#3cd500f9</color>
+    <color name="colorPurple_900">#3c4a148c</color>
+    <!-- ./ 1st Gradient color -->
+
+    <!-- 2nd Gradient color -->
+    <color name="colorAmber_A400">#3cffc400</color>
+    <color name="colorAmber_900">#3cff6f00</color>
+    <!-- ./ 2nd Gradient color -->
+
+    <!-- 3rd Gradient color -->
+    <color name="colorGreen_A400">#3c00e676</color>
+    <color name="colorGreen_900">#3c1b5e20</color>
+    <!-- ./ 3rd Gradient color -->
+
+    <!-- 4th Gradient color -->
+    <color name="colorRed_A400">#3cff1744</color>
+    <color name="colorRed_900">#3cb71c1c</color>
+    <!-- ./ 4th Gradient color -->
+</resources>
