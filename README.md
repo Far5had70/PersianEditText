@@ -1,5 +1,7 @@
 # PersianEdittext
 
+![alt text](https://raw.githubusercontent.com/Far5had70/PersianEditText/master/ScreenVideo.gif)
+
 ![alt text](https://raw.githubusercontent.com/Far5had70/PersianEditText/master/Capture.png)
 
 Simple Custom EditText for Android
