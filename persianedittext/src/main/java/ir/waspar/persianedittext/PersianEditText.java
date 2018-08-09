@@ -9,6 +9,7 @@ import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
+import android.text.InputFilter;
 import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.Gravity;
@@ -42,6 +43,7 @@ public class PersianEditText extends FrameLayout {
 
     @SuppressLint("RtlHardcoded")
     private void initView(Context context , AttributeSet attrs) {
+
         View view = inflate(getContext(), R.layout.edit_text_persian, null);
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.PersianEditText, 0, 0);
         editText = view.findViewById(R.id.so_edittext);
@@ -62,7 +64,8 @@ public class PersianEditText extends FrameLayout {
             float Radius = ta.getDimension(R.styleable.PersianEditText_strokeRadius, 80);
             float Stroke = ta.getDimension(R.styleable.PersianEditText_strokeSize, 3);
             int gravity = ta.getInteger(R.styleable.PersianEditText_edtgravity, 3);
-            int InputTypee = ta.getInteger(R.styleable.PersianEditText_edtInputType, 3);
+            int InputTypee = ta.getInteger(R.styleable.PersianEditText_edtInputType, 4);
+            int MaxLenght = ta.getInteger(R.styleable.PersianEditText_maxLenght, 100);
 
             int strColor;
             if (strokeColor != null){
@@ -90,59 +93,71 @@ public class PersianEditText extends FrameLayout {
             shape2.setCornerRadius(20);
             shape2.setCornerRadii(new float[] { 0, 0, Radius, Radius, Radius, Radius, 0, 0 });
             relativeLayout.setBackground(shape2);
-
-
-            editText.setText(Text);
-            editText.setHint(Hint);
+            setText(Text);
+            setHint(Hint);
             if (color != null){
-                editText.setTextColor(color);
+                setTextColor(color);
             }
-            editText.setTextSize(Size);
-            imageView.setImageDrawable(Drawable);
-
+            setTextSize(Size);
+            setImageDrawable(Drawable);
             if (Font != null){
-                editText.setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/"+Font));
+                setFont(context , Font);
             }
-
-            editText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-
-
-
-            switch (gravity){
-                case 1:
-                    editText.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
-                    break;
-                case 2:
-                    editText.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);
-                    break;
-                case 3:
-                    editText.setGravity(Gravity.CENTER | Gravity.CENTER_VERTICAL);
-                    break;
-            }
-
-            switch (InputTypee){
-                case 1:
-                    editText.setInputType(InputType.TYPE_CLASS_PHONE);
-                    break;
-                case 2:
-                    editText.setInputType(InputType.TYPE_CLASS_NUMBER);
-                    break;
-                case 3:
-                    editText.setInputType(InputType.TYPE_CLASS_TEXT);
-                    break;
-                case 4:
-                    editText.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                    break;
-                case 5:
-                    editText.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_FLAG_MULTI_LINE);
-                    break;
-            }
+            gravityy(gravity);
+            inputType(InputTypee);
+            maxLenght(MaxLenght);
 
 
         } finally {
             ta.recycle();
         }
         addView(view);
+    }
+
+    public void setFont(Context context , String font) {
+        editText.setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/"+font));
+    }
+
+    public void maxLenght(int maxLenght) {
+        editText.setFilters(new InputFilter[] {new InputFilter.LengthFilter(maxLenght)});
+    }
+
+    private void gravityy(int gravity) {
+        switch (gravity){
+            case 1:
+                editText.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
+                break;
+            case 2:
+                editText.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);
+                break;
+            case 3:
+                editText.setGravity(Gravity.CENTER | Gravity.CENTER_VERTICAL);
+                break;
+        }
+    }
+
+    public void gravity(int gravity) {
+        editText.setGravity(gravity | Gravity.CENTER_VERTICAL);
+    }
+
+    public void inputType(int inputType) {
+        switch (inputType){
+            case 1:
+                editText.setInputType(InputType.TYPE_CLASS_PHONE);
+                break;
+            case 2:
+                editText.setInputType(InputType.TYPE_CLASS_NUMBER);
+                break;
+            case 3:
+                editText.setInputType(InputType.TYPE_CLASS_TEXT);
+                break;
+            case 4:
+                editText.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                break;
+            case 5:
+                editText.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+                break;
+        }
     }
 
     private void initView() {
@@ -170,6 +185,14 @@ public class PersianEditText extends FrameLayout {
 
     public void setImageDrawable(Drawable Drawable){
         imageView.setImageDrawable(Drawable);
+    }
+
+    public String getText(){
+        return editText.getText().toString();
+    }
+
+    public void setError(String error){
+        editText.setError(error);
     }
 
 }
