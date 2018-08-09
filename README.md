@@ -49,22 +49,23 @@ Step 2. Add the dependency
 2 - Add the PersianEditText View with custom params :
 
 	<ir.waspar.persianedittext.PersianEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        PersianEditText:edtgravity="center"
-        PersianEditText:edtInputType="number"
-        PersianEditText:imageSrc="@drawable/ic_profile"
-        PersianEditText:setHint="@string/app_name"
-        PersianEditText:setImageBackground="@color/midnightgreen"
-        PersianEditText:strokeColor="@color/black"
-        PersianEditText:strokeRadius="40dp"
-        PersianEditText:strokeSize="1dp"
-        PersianEditText:textColor="@color/midnightgreen"
-        PersianEditText:textSize="6dp"
-        PersianEditText:typeface="bsans.ttf">
-    </ir.waspar.persianedittext.PersianEditText>
+            android:id="@+id/persian_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            PersianEditText:edtgravity="center"
+            PersianEditText:edtInputType="phone"
+            PersianEditText:imageSrc="@drawable/ic_profile"
+            PersianEditText:setHint="تلفن همراه"
+            PersianEditText:setImageBackground="@color/midnightgreen"
+            PersianEditText:strokeColor="@color/black"
+            PersianEditText:strokeRadius="40dp"
+            PersianEditText:maxLenght="11"
+            PersianEditText:strokeSize="1dp"
+            PersianEditText:textColor="@color/midnightgreen"
+            PersianEditText:textSize="8sp">
 
 # FAQ
 
