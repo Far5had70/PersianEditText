@@ -25,7 +25,6 @@ public class PersianEditText extends FrameLayout {
     private EditText editText;
     private ImageView imageView;
 
-
     public PersianEditText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         initView();
