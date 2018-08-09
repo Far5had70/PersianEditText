@@ -1,6 +1,6 @@
 # PersianEdittext
 
-![alt text](https://raw.githubusercontent.com/Far5had70/PersianEditText/master/ScreenVideo.gif)
+<img src="https://raw.githubusercontent.com/Far5had70/PersianEditText/master/ScreenVideo.gif" height="480" width="270">
 
 ![alt text](https://raw.githubusercontent.com/Far5had70/PersianEditText/master/Capture.png)
 
