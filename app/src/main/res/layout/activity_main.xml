@@ -23,7 +23,7 @@
         PersianEditText:maxLenght="11"
         PersianEditText:strokeSize="1dp"
         PersianEditText:textColor="@color/midnightgreen"
-        PersianEditText:textSize="8sp">
+        PersianEditText:textSize="4.5sp">
 
 
 
