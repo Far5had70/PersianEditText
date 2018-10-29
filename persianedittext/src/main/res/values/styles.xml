@@ -3,7 +3,7 @@
     <style name="MyEditTextTheme">
         <item name="colorControlNormal">#00000000</item>
         <item name="colorControlActivated">#00000000</item>
-        <item name="colorControlHighlight">#00000000</item>
+        <item name="colorControlHighlight">#000000</item>
     </style>
 
 </resources>
