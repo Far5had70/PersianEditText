@@ -29,7 +29,7 @@ Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
 
-	implementation 'com.github.Far5had70:PersianEditText:3.0.1'
+	implementation 'com.github.Far5had70:PersianEditText:3.1.0'
 	
 Step 2. Add the dependency
 
